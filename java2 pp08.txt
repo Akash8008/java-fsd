@@ -1,0 +1,102 @@
+********inheritance*******
+class Animal{  
+void eat(){System.out.println("eating...");}  
+}  
+class Dog extends Animal{  
+void bark(){System.out.println("barking...");}  
+}  
+class TestInheritance{  
+public static void main(String args[]){  
+Dog d=new Dog();  
+d.bark();  
+d.eat();  
+}}  
+********polymorphisam*********
+import demo1.Example.main;
+
+class a{
+	int amount;
+	public int  cal(int bonus) {
+		System.out.println("int");
+		return amount+bonus;
+		
+	}
+}
+class b extends a{
+	public int cal(float bonus) {
+		System.out.println("float");
+		return amount;
+	}
+}
+public class poly {
+	public static void main(String args[]) {
+		b obj=new b();
+		obj.amount=10000;
+		obj.cal(1000);
+		
+	}
+
+}
+****************constructor***********
+public class constructor {
+	String value;
+	public constructor(String name) {
+		value=name;
+		System.out.println("constrctor type is "+value);
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		constructor obj= new constructor("parametrized");
+
+	}
+
+	}
+**************absrtaction*************
+package demo1;
+abstract class animal{
+	abstract void display();
+	void sound() {
+		System.out.println("sounds");
+	}
+
+}
+class dog extends animal{
+	void display() {
+		System.out.println("dog bark");
+	}
+	
+}
+class cat extends animal{
+	void display() {
+		System.out.println("cat mewo");
+	}
+}
+
+public class absract {
+	public static void main(String args[]) {
+		dog obj1=new dog();
+		cat obj2=new cat();
+		obj1.display();
+		obj2.display();
+		obj1.sound();
+	}
+
+}
+**********encapsulation**********
+public class Student{  
+//private data member  
+private String name;  
+//getter method for name  
+public String getName(){  
+return name;  
+}  
+//setter method for name  
+public void setName(String name){  
+this.name=name  
+}  
+}  
+
+ 

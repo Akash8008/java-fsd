@@ -1,0 +1,28 @@
+package demo1;
+interface a{
+	public abstract void add(int num1,int num2);
+}
+interface b{
+	public abstract void sub(int num1,int num2);
+	
+}
+class c implements a,b{
+	public void add(int num1,int num2) {
+		System.out.println(num1+num2);
+		
+	}
+    public void sub(int num1,int num2) {
+    	System.out.println(num1-num2);
+		
+	}
+	
+}
+
+public class interface1 {
+	public static void main(String args[]) {
+	c obj=new c();
+	obj.add(5, 20);
+	obj.sub(25, 20);
+
+	}
+}
